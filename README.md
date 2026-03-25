@@ -4,12 +4,6 @@
 
 ---
 
-## About
-
-Find and connect with sports and fitness coaches near you — filter by sport, location, and experience to discover the right coach for your goals.
-
----
-
 ## What is Whistle-Up?
 
 Whistle-Up is a sports coaching marketplace that helps users discover and connect with the right coach based on their needs.
