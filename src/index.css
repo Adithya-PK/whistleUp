@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Whistle-Up Design System */
+    --background: 0 0% 100%;
+    --foreground: 215 91% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 91% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 91% 7%;
+
+    /* Primary Blue #2563EB */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Blue Dark #1E40AF */
+    --primary-dark: 224 76% 40%;
+
+    /* Blue Light #3B82F6 */
+    --primary-light: 217 91% 60%;
+
+    /* Blue Tint #EFF6FF */
+    --blue-tint: 214 100% 97%;
+
+    /* Off-white #F0F4FF */
+    --off-white: 228 100% 97%;
+
+    --secondary: 228 100% 97%;
+    --secondary-foreground: 215 91% 7%;
+
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 214 100% 97%;
+    --accent-foreground: 221 83% 53%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 89%;
+    --input: 214 32% 89%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.625rem;
+
+    /* Verified Green #10B981 */
+    --verified: 160 84% 39%;
+
+    /* Star Gold #F59E0B */
+    --star: 38 92% 50%;
+
+    /* Dark Navy #0F172A */
+    --navy: 222 84% 5%;
+    --navy-card: 215 32% 17%;
+
+    /* Sidebar */
+    --sidebar-background: 222 84% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 32% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 32% 22%;
+    --sidebar-ring: 221 83% 53%;
+  }
+
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 32% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 32% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 32% 22%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 32% 22%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 215 32% 22%;
+    --accent-foreground: 217 91% 60%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 32% 22%;
+    --input: 215 32% 22%;
+    --ring: 221 83% 53%;
+
+    --blue-tint: 215 32% 22%;
+    --off-white: 215 32% 17%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, #1E3A8A, #2563EB, #60A5FA);
+  }
+
+  .gradient-button {
+    background: linear-gradient(90deg, #2563EB, #3B82F6);
+  }
+
+  .gradient-card {
+    background: linear-gradient(180deg, #EFF6FF, #FFFFFF);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-shadow {
+    box-shadow: 0 4px 24px rgba(37, 99, 235, 0.15);
+  }
+
+  .card-shadow {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-shadow-hover {
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.18);
+  }
+
+  .text-heading {
+    color: hsl(var(--foreground));
+  }
+
+  .text-body {
+    color: #475569;
+  }
+
+  .dark .text-body {
+    color: hsl(var(--muted-foreground));
+  }
+}
