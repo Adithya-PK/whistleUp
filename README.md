@@ -1,4 +1,4 @@
-# 🚀 Whistle-Up — Find Your Perfect Coach
+# Whistle-Up — Find Your Perfect Coach
 
 > Discover, compare, and connect with sports and fitness coaches near you — built for athletes, beginners, and seniors.
 
